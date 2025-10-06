@@ -21,7 +21,7 @@ Breathe cleaner air! Our **air duct cleaning** service helps improve indoor air 
 ---
 
 ## 📍 Service Areas
-Serving [Burlington] and surrounding areas.  
+Serving Burlington Ont., and surrounding areas.  
 Contact us to see if we’re available in your neighborhood.
 
 ---
@@ -29,20 +29,17 @@ Contact us to see if we’re available in your neighborhood.
 ## 💬 Get in Touch
 
 📧 **Email:** [the01bros@outlook.com](mailto:the01bros@outlook.com)  
-📞 **Phone:** (289) 707-0312  
+📞 **Text:** (289) 707-0312  
 
 ---
 
 ## 💡 About Us
-We’re a small team of hardworking brothers with one goal:  
+Laid-back. Locked-in. We’re a small team of hardworking brothers with one goal:  
 to deliver **reliable, high-quality, and affordable** property care services.
-
-**The01bros** — real ones for real work
 
 ---
 
-> Laid-back. Locked-in.
-> **The01bros**
+> **The01bros** — real ones for real work 
 
 ---
 
