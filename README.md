@@ -41,7 +41,7 @@
 <section class="lightblue center">
   <h1>🧼 the01bros</h1>
   <p>Your trusted local team for bin cleaning, snow removal, and duct care in <b>Burlington, Ontario</b>.</p>
-  <a href="book.html" class="button">📅 Book Online</a>
+  <a href="The01Bros-Booking" class="button">📅 Book Online</a>
 </section>
 
 <section class="white">
