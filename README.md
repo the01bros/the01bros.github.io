@@ -12,20 +12,38 @@
   .white { background-color: #ffffff; }
   h1, h2, h3 { color: #005b99; }
   .center { text-align: center; }
+
+  /* Center the pricing table section */
+  .price-table-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .price-table {
     border-collapse: collapse;
-    margin: auto;
     width: 80%;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
   }
   .price-table th, .price-table td {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
   }
   .price-table th {
     background-color: #005b99;
     color: white;
+    font-size: 18px;
   }
+  .price-table td {
+    background-color: #f9f9f9;
+    font-size: 16px;
+  }
+
   .button {
     background-color: #005b99;
     color: white;
@@ -35,6 +53,27 @@
   }
   .button:hover {
     background-color: #007acc;
+  }
+
+  /* Services section styling */
+  .services-section {
+    max-width: 800px;
+    margin: auto;
+  }
+  .service-item {
+    background-color: #f0f8ff;
+    border: 1px solid #cce0ff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px auto;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  }
+  .service-item span {
+    font-size: 26px;
+    display: block;
+    margin-bottom: 10px;
   }
 </style>
 
@@ -47,44 +86,31 @@
 <section class="white">
   <h2 class="center">🧰 Our Services</h2>
 
-  ### 🚮 Garbage Bin Cleaning  
-  - Sparkling clean and odor-free bins using eco-friendly detergents.  
-
-  ### ♻️ Recycling Bin Cleaning  
-  - Keep your blue bins looking new and free of residue.  
-
-  ### 🌿 Compost Bin Cleaning  
-  - Deep sanitize your compost bins to eliminate bacteria and smells.  
-
-  ### ❄️ Snow Removal  
-  - Driveway and walkway clearing all winter long.  
-
-  ### 🌬️ Duct Cleaning  
-  - Improve indoor air quality and efficiency.  
-
-  ### 💳 Subscriptions  
-  - Monthly pass: **5 all-inclusive cleans per month** — perfect for busy households.  
-
-  ### 🤝 Referrals  
-  - Refer a friend and get a **free cleaning for all 3 bins**!  
-
-  ### ✨ Deep Cleaning  
-  - For tough grime or buildup, our **deep clean service** is available (prices double).
-
+  <div class="services-section">
+    <div class="service-item"><span>🚮</span>Garbage Bin Cleaning – Sparkling clean and odor-free bins using eco-friendly detergents.</div>
+    <div class="service-item"><span>♻️</span>Recycling Bin Cleaning – Keep your blue bins looking new and free of residue.</div>
+    <div class="service-item"><span>🌿</span>Compost Bin Cleaning – Deep sanitize your compost bins to eliminate bacteria and smells.</div>
+    <div class="service-item"><span>❄️</span>Snow Removal – Driveway and walkway clearing all winter long.</div>
+    <div class="service-item"><span>🌬️</span>Duct Cleaning – Improve indoor air quality and efficiency.</div>
+    <div class="service-item"><span>💳</span>Subscriptions – Monthly pass: <b>5 all-inclusive cleans per month</b>.</div>
+    <div class="service-item"><span>🤝</span>Referrals – Refer a friend and get a <b>free cleaning for all 3 bins!</b></div>
+    <div class="service-item"><span>✨</span>Deep Cleaning – For tough grime (prices double).</div>
+  </div>
 </section>
 
-<section class="lightblue">
-  <h2 class="center">💰 Pricing</h2>
-
-  <table class="price-table">
-    <tr><th>Service</th><th>Price</th></tr>
-    <tr><td>Blue Bin Cleaning</td><td>$2.99</td></tr>
-    <tr><td>Garbage Bin Cleaning</td><td>$4.99</td></tr>
-    <tr><td>Compost Bin Cleaning</td><td>$9.99</td></tr>
-    <tr><td>Package Deal (All 3)</td><td>$15.00</td></tr>
-    <tr><td>Monthly Subscription (5 cleans/month)</td><td>$30.00</td></tr>
-    <tr><td>Deep Cleaning</td><td>Double listed price</td></tr>
-  </table>
+<section class="lightblue center">
+  <h2>💰 Pricing</h2>
+  <div class="price-table-wrapper">
+    <table class="price-table">
+      <tr><th>Service</th><th>Price</th></tr>
+      <tr><td>Blue Bin Cleaning</td><td>$2.99</td></tr>
+      <tr><td>Garbage Bin Cleaning</td><td>$4.99</td></tr>
+      <tr><td>Compost Bin Cleaning</td><td>$9.99</td></tr>
+      <tr><td>Package Deal (All 3)</td><td>$15.00</td></tr>
+      <tr><td>Monthly Subscription (5 cleans/month)</td><td>$30.00</td></tr>
+      <tr><td>Deep Cleaning</td><td>Double listed price</td></tr>
+    </table>
+  </div>
 </section>
 
 <section class="white center">
@@ -115,6 +141,7 @@
   <p>© 2025 the01bros. All rights reserved.<br>
   “We clean it like we own it.” 🧢</p>
 </section>
+
 <form
   action="https://formspree.io/f/xnngzglz"
   method="POST"
@@ -127,6 +154,5 @@
     Your message:
     <textarea name="message"></textarea>
   </label>
-  <!-- your other form fields go here -->
   <button type="submit">Send</button>
 </form>
