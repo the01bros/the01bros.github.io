@@ -8,73 +8,43 @@
   section {
     padding: 50px 20px;
   }
-  .lightblue { background-color: #e6f2ff; }
-  .white { background-color: #ffffff; }
-  h1, h2, h3 { color: #005b99; }
-  .center { text-align: center; }
-  .price-table {
-    border-collapse: collapse;
-    margin: auto;
-    width: 80%;
-  }
-  .price-table th, .price-table td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-  }
-  .price-table th {
-    background-color: #005b99;
-    color: white;
-  }
-  .button {
-    background-color: #005b99;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 8px;
-  }
-  .button:hover {
-    background-color: #007acc;
-  }
-  form {
-    max-width: 500px;
-    margin: auto;
-    text-align: left;
-  }
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  input[type="submit"], button[type="submit"] {
-    background-color: #005b99;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    padding: 10px 20px;
-  }
-  input[type="submit"]:hover, button[type="submit"]:hover {
-    background-color: #007acc;
-  }
-  .price-table-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Pricing: center visually and keep a tidy width */
+.price-table-wrapper {
+  text-align: center;     /* center inline/inline-table children */
+  padding: 20px 0;
   width: 100%;
+  box-sizing: border-box;
 }
-  .price-table {
+
+.price-table {
+  display: inline-table;  /* lets text-align:center on the wrapper center the table */
   border-collapse: collapse;
-  width: 60%; 
-  max-width: 600px; 
-  margin: 20px auto;
-  background-color: #fff; 
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 600px;           /* ideal desktop width */
+  max-width: 90%;         /* mobile-friendly */
+  margin: 0;              /* spacing controlled by wrapper */
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
   border-radius: 8px;
   overflow: hidden;
 }
+
+.price-table th, .price-table td {
+  border: 1px solid #e0e6ea;
+  padding: 14px 16px;
+  text-align: center;
+}
+
+.price-table th {
+  background-color: #005b99;
+  color: #fff;
+  font-size: 18px;
+}
+
+.price-table td {
+  background-color: #fafafa;
+  font-size: 16px;
+}
+
 
   /* ✅ New styling for services section */
   .services-container {
@@ -179,8 +149,8 @@
   </div>
 </section>
 
-<section class="lightblue center">
-  <h2>💰 Pricing</h2>
+<section class="lightblue">
+  <h2 class="center">💰 Pricing</h2>
   <div class="price-table-wrapper">
     <table class="price-table">
       <tr><th>Service</th><th>Price</th></tr>
@@ -193,6 +163,7 @@
     </table>
   </div>
 </section>
+
 
 
 
