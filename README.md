@@ -75,6 +75,43 @@
     display: block;
     margin-bottom: 10px;
   }
+    /* Form section */
+  #book form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  #book label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  #book input, #book textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  #book input[type="submit"] {
+    background-color: #005b99;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  #book input[type="submit"]:hover {
+    background-color: #007acc;
+  }
+</style>
 </style>
 
 <section class="lightblue center">
