@@ -112,7 +112,6 @@
     background-color: #007acc;
   }
 </style>
-</style>
 
 <section class="lightblue center">
   <h1>🧼 The01Bros</h1>
@@ -197,7 +196,3 @@
   “We clean it like we own it.” 🧢</p>
 </section>
 
-<section class="lightblue center">
-  <p>© 2025 the01bros. All rights reserved.<br>
-  “We clean it like we own it.” 🧢</p>
-</section>
