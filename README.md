@@ -48,7 +48,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  input[type="submit"] {
+  input[type="submit"], button[type="submit"] {
     background-color: #005b99;
     color: white;
     border: none;
@@ -56,8 +56,49 @@
     border-radius: 8px;
     padding: 10px 20px;
   }
-  input[type="submit"]:hover {
+  input[type="submit"]:hover, button[type="submit"]:hover {
     background-color: #007acc;
+  }
+
+  /* ✅ New styling for services section */
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+  }
+
+  .service-card {
+    background-color: #f7faff;
+    border: 1px solid #d6e6f5;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    width: 280px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  }
+
+  .service-icon {
+    font-size: 42px;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .service-card h3 {
+    color: #005b99;
+    margin-bottom: 10px;
+  }
+
+  .service-card p {
+    font-size: 15px;
+    color: #333;
   }
 </style>
 
@@ -67,18 +108,59 @@
   <a href="#book" class="button">📅 Book Online</a>
 </section>
 
-<section class="white">
-  <h2 class="center">🧰 Our Services</h2>
-  <p>
-    🚮 Garbage Bin Cleaning – Sparkling clean and odor-free bins using eco-friendly detergents.<br>
-    ♻️ Recycling Bin Cleaning – Keep your blue bins looking new and free of residue.<br>
-    🌿 Compost Bin Cleaning – Deep sanitize to eliminate bacteria and smells.<br>
-    ❄️ Snow Removal – Driveway and walkway clearing all winter long.<br>
-    🌬️ Duct Cleaning – Improve indoor air quality and efficiency.<br>
-    💳 Subscriptions – Monthly pass: <b>5 all-inclusive cleans per month</b>.<br>
-    🤝 Referrals – Refer a friend and get a <b>free cleaning for all 3 bins!</b><br>
-    ✨ Deep Cleaning – Double the price for tough grime.
-  </p>
+<!-- ✅ Updated "Our Services" section -->
+<section class="white center">
+  <h2>🧰 Our Services</h2>
+
+  <div class="services-container">
+    <div class="service-card">
+      <span class="service-icon">🚮</span>
+      <h3>Garbage Bin Cleaning</h3>
+      <p>Sparkling clean and odor-free bins using eco-friendly detergents.</p>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">♻️</span>
+      <h3>Recycling Bin Cleaning</h3>
+      <p>Keep your blue bins looking new and free of residue.</p>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">🌿</span>
+      <h3>Compost Bin Cleaning</h3>
+      <p>Deep sanitize your compost bins to eliminate bacteria and smells.</p>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">❄️</span>
+      <h3>Snow Removal</h3>
+      <p>Driveway and walkway clearing all winter long.</p>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">🌬️</span>
+      <h3>Duct Cleaning</h3>
+      <p>Improve indoor air quality and efficiency.</p>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">💳</span>
+      <h3>Subscriptions</h3>
+      <p>Monthly pass: <b>5 all-inclusive cleans per month</b> — perfect for busy households.</p>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">🤝</span>
+      <h3>Referrals</h3>
+      <p>Refer a friend and get a <b>free cleaning for all 3 bins!</b></p>
+    </div>
+
+    <div class="service-card">
+      <span class="service-icon">✨</span>
+      <h3>Deep Cleaning</h3>
+      <p>For tough grime or buildup, our <b>deep clean service</b> is available (prices double).</p>
+    </div>
+  </div>
 </section>
 
 <section class="lightblue">
@@ -112,22 +194,25 @@
   <p><i>Click the map to open on Google Maps.</i></p>
 </section>
 
-<!-- ✅ FORM SECTION -->
-<form
-  action="https://formspree.io/f/xnngzglz"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+<!-- ✅ Booking Form -->
+<section id="book" class="white center">
+  <h2>📅 Book a Cleaning</h2>
+  <form action="https://formspree.io/f/xnngzglz" method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" name="_replyto" id="email" required>
+
+    <label for="service">Service Requested</label>
+    <input type="text" name="service" id="service" placeholder="e.g., Garbage Bin Cleaning" required>
+
+    <label for="message">Additional Details</label>
+    <textarea name="message" id="message" rows="4" placeholder="Tell us anything else we should know..."></textarea>
+
+    <input type="submit" value="Submit Booking Request">
+  </form>
+</section>
 
 <section class="lightblue center">
   <p>© 2025 the01bros. All rights reserved.<br>
