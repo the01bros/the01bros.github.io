@@ -36,41 +36,49 @@
   .button:hover {
     background-color: #007acc;
   }
+  form {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="submit"] {
+    background-color: #005b99;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
+  input[type="submit"]:hover {
+    background-color: #007acc;
+  }
 </style>
 
 <section class="lightblue center">
   <h1>🧼 The01Bros</h1>
   <p>Your trusted local team for bin cleaning, snow removal, and duct care in <b>Burlington, Ontario</b>.</p>
-  <a href="https://formspree.io/f/xnngzglz" class="button" target="_blank">📅 Book Online</a>
+  <a href="#book" class="button">📅 Book Online</a>
 </section>
 
 <section class="white">
   <h2 class="center">🧰 Our Services</h2>
-
-  ### 🚮 Garbage Bin Cleaning  
-  - Sparkling clean and odor-free bins using eco-friendly detergents.  
-
-  ### ♻️ Recycling Bin Cleaning  
-  - Keep your blue bins looking new and free of residue.  
-
-  ### 🌿 Compost Bin Cleaning  
-  - Deep sanitize your compost bins to eliminate bacteria and smells.  
-
-  ### ❄️ Snow Removal  
-  - Driveway and walkway clearing all winter long.  
-
-  ### 🌬️ Duct Cleaning  
-  - Improve indoor air quality and efficiency.  
-
-  ### 💳 Subscriptions  
-  - Monthly pass: **5 all-inclusive cleans per month** — perfect for busy households.  
-
-  ### 🤝 Referrals  
-  - Refer a friend and get a **free cleaning for all 3 bins**!  
-
-  ### ✨ Deep Cleaning  
-  - For tough grime or buildup, our **deep clean service** is available (prices double).
-
+  <p>
+    🚮 Garbage Bin Cleaning – Sparkling clean and odor-free bins using eco-friendly detergents.<br>
+    ♻️ Recycling Bin Cleaning – Keep your blue bins looking new and free of residue.<br>
+    🌿 Compost Bin Cleaning – Deep sanitize to eliminate bacteria and smells.<br>
+    ❄️ Snow Removal – Driveway and walkway clearing all winter long.<br>
+    🌬️ Duct Cleaning – Improve indoor air quality and efficiency.<br>
+    💳 Subscriptions – Monthly pass: <b>5 all-inclusive cleans per month</b>.<br>
+    🤝 Referrals – Refer a friend and get a <b>free cleaning for all 3 bins!</b><br>
+    ✨ Deep Cleaning – Double the price for tough grime.
+  </p>
 </section>
 
 <section class="lightblue">
@@ -104,11 +112,24 @@
   <p><i>Click the map to open on Google Maps.</i></p>
 </section>
 
-<section class="white center">
-  <h2>📞 Contact Us</h2>
-  <p>📧 <a href="mailto:info@the01bros.com">info@the01bros.com</a><br>
-     📞 (555) 123-4567</p>
-  <a href="https://formspree.io/f/xnngzglz" class="button" target="_blank">Book a Cleaning</a>
+<!-- ✅ FORM SECTION -->
+<section id="book" class="white center">
+  <h2>📅 Book a Cleaning</h2>
+  <form action="https://formspree.io/f/xnngzglz" method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" name="_replyto" id="email" required>
+
+    <label for="service">Service Requested</label>
+    <input type="text" name="service" id="service" placeholder="e.g., Garbage Bin Cleaning" required>
+
+    <label for="message">Additional Details</label>
+    <textarea name="message" id="message" rows="4" placeholder="Tell us anything else we should know..."></textarea>
+
+    <input type="submit" value="Submit Booking Request">
+  </form>
 </section>
 
 <section class="lightblue center">
