@@ -134,8 +134,7 @@
   <h2>📞 Contact Us</h2>
   <p>📧 <a href="mailto:the01bros@outlook.com">the01bros@outlook.com</a><br>
      📞 (289) 707 0312</p>
-  <a href="https://formspree.io/f/xnngzglz" class="button" target="_blank">Book a Cleaning</a>
-</section>
+ 
 
 <!-- ✅ FORM SECTION -->
 <section id="book" class="white center">
@@ -144,33 +143,23 @@
   action="https://formspree.io/f/xnngzglz"
   method="POST"
 >
+ <label>
+    Your name:
+    <input type="name" name="name">
+  </label> 
   <label>
     Your email:
     <input type="email" name="email">
   </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
+  <label>  
+  <label for="service">Service Requested</label>
+  <input type="text" name="service" id="service" placeholder="e.g., Garbage Bin Cleaning" required>
+
+  <label for="message">Additional Details</label>
+  <textarea name="message" id="message" rows="4" placeholder="Tell us anything else we should know..."></textarea>
   <button type="submit">Send</button>
 </form>
-  <form action="https://formspree.io/f/xnngzglz" method="POST">
-    <label for="name">Full Name</label>
-    <input type="text" name="name" id="name" required>
-
-    <label for="email">Email Address</label>
-    <input type="email" name="_replyto" id="email" required>
-
-    <label for="service">Service Requested</label>
-    <input type="text" name="service" id="service" placeholder="e.g., Garbage Bin Cleaning" required>
-
-    <label for="message">Additional Details</label>
-    <textarea name="message" id="message" rows="4" placeholder="Tell us anything else we should know..."></textarea>
-
-    <input type="submit" value="Submit Booking Request">
-  </form>
-</section>
+>
 
 <section class="lightblue center">
   <p>© 2025 the01bros. All rights reserved.<br>
