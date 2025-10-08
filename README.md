@@ -137,31 +137,25 @@
   <a href="https://formspree.io/f/xnngzglz" class="button" target="_blank">Book a Cleaning</a>
 </section>
 
-
 <!-- ✅ Booking Form -->
-<form
-  action="https://formspree.io/f/xnngzglz"
-  method="POST"
->
-  <label>
-    Your name:
-    <input type="name" name="name">
-  </label>
-  <label>
-    Your email:
-    <textarea name="email"></textarea>
-  </label>
-  <label>
-    Your phone number:
-    <input type="Phone Number" name="Phone Number">
-  </label>
-  <label>
-    Service needed:
-    <input type="Service Needed" name="service needed">
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+<section id="book" class="white center">
+  <h2>📅 Book a Cleaning</h2>
+  <form action="https://formspree.io/f/xnngzglz" method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" name="_replyto" id="email" required>
+
+    <label for="service">Service Requested</label>
+    <input type="text" name="service" id="service" placeholder="e.g., Garbage Bin Cleaning" required>
+
+    <label for="message">Additional Details</label>
+    <textarea name="message" id="message" rows="4" placeholder="Tell us anything else we should know..."></textarea>
+
+    <input type="submit" value="Submit Booking Request">
+  </form>
+</section>
 
 
 <section class="lightblue center">
