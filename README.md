@@ -59,6 +59,22 @@
   input[type="submit"]:hover, button[type="submit"]:hover {
     background-color: #007acc;
   }
+  .price-table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+  .price-table {
+  border-collapse: collapse;
+  width: 60%; 
+  max-width: 600px; 
+  margin: 20px auto;
+  background-color: #fff; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
 
   /* ✅ New styling for services section */
   .services-container {
@@ -163,9 +179,9 @@
   </div>
 </section>
 
-<section class="lightblue">
-  <h2 class="center">💰 Pricing</h2>
-  <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+<section class="lightblue center">
+  <h2>💰 Pricing</h2>
+  <div class="price-table-wrapper">
     <table class="price-table">
       <tr><th>Service</th><th>Price</th></tr>
       <tr><td>Blue Bin Cleaning</td><td>$2.99</td></tr>
@@ -177,6 +193,7 @@
     </table>
   </div>
 </section>
+
 
 
 <section class="white center">
