@@ -165,7 +165,6 @@
 
 <section class="lightblue">
   <h2 class="center">💰 Pricing</h2>
-
   <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
     <table class="price-table">
       <tr><th>Service</th><th>Price</th></tr>
