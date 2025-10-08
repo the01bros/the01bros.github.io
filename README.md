@@ -139,19 +139,25 @@
 
 
 <!-- ✅ Booking Form -->
-<section id="book" class="white center">
-  <h2>📅 Book a Cleaning</h2>
 <form
   action="https://formspree.io/f/xnngzglz"
   method="POST"
 >
   <label>
-    Your email:
-    <input type="email" name="email">
+    Your name:
+    <input type="name" name="name">
   </label>
   <label>
-    Your message:
-    <textarea name="message"></textarea>
+    Your email:
+    <textarea name="email"></textarea>
+  </label>
+  <label>
+    Your phone number:
+    <input type="Phone Number" name="Phone Number">
+  </label>
+  <label>
+    Service needed:
+    <input type="Service Needed" name="service needed">
   </label>
   <!-- your other form fields go here -->
   <button type="submit">Send</button>
