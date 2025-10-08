@@ -41,7 +41,7 @@
 <section class="lightblue center">
   <h1>🧼 The01Bros</h1>
   <p>Your trusted local team for bin cleaning, snow removal, and duct care in <b>Burlington, Ontario</b>.</p>
-  <a href="The01Bros-Booking" class="button">📅 Book Online</a>
+  <a href="https://formspree.io/f/xnngzglz" class="button" target="_blank">📅 Book Online</a>
 </section>
 
 <section class="white">
@@ -108,7 +108,7 @@
   <h2>📞 Contact Us</h2>
   <p>📧 <a href="mailto:info@the01bros.com">info@the01bros.com</a><br>
      📞 (555) 123-4567</p>
-  <a href="book.html" class="button">Book a Cleaning</a>
+  <a href="https://formspree.io/f/xnngzglz" class="button" target="_blank">Book a Cleaning</a>
 </section>
 
 <section class="lightblue center">
