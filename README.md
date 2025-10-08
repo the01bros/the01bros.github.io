@@ -166,16 +166,19 @@
 <section class="lightblue">
   <h2 class="center">💰 Pricing</h2>
 
-  <table class="price-table">
-    <tr><th>Service</th><th>Price</th></tr>
-    <tr><td>Blue Bin Cleaning</td><td>$2.99</td></tr>
-    <tr><td>Garbage Bin Cleaning</td><td>$4.99</td></tr>
-    <tr><td>Compost Bin Cleaning</td><td>$9.99</td></tr>
-    <tr><td>Package Deal (All 3)</td><td>$15.00</td></tr>
-    <tr><td>Monthly Subscription (5 cleans/month)</td><td>$30.00</td></tr>
-    <tr><td>Deep Cleaning</td><td>Double listed price</td></tr>
-  </table>
+  <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+    <table class="price-table">
+      <tr><th>Service</th><th>Price</th></tr>
+      <tr><td>Blue Bin Cleaning</td><td>$2.99</td></tr>
+      <tr><td>Garbage Bin Cleaning</td><td>$4.99</td></tr>
+      <tr><td>Compost Bin Cleaning</td><td>$9.99</td></tr>
+      <tr><td>Package Deal (All 3)</td><td>$15.00</td></tr>
+      <tr><td>Monthly Subscription (5 cleans/month)</td><td>$30.00</td></tr>
+      <tr><td>Deep Cleaning</td><td>Double listed price</td></tr>
+    </table>
+  </div>
 </section>
+
 
 <section class="white center">
   <h2>🕒 Hours of Operation</h2>
