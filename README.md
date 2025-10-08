@@ -137,7 +137,7 @@
   <a href="https://formspree.io/f/xnngzglz" class="button" target="_blank">Book a Cleaning</a>
 </section>
 
-<!-- ✅ Booking Form -->
+<!-- ✅ FORM SECTION -->
 <section id="book" class="white center">
   <h2>📅 Book a Cleaning</h2>
   <form action="https://formspree.io/f/xnngzglz" method="POST">
@@ -156,7 +156,6 @@
     <input type="submit" value="Submit Booking Request">
   </form>
 </section>
-
 
 <section class="lightblue center">
   <p>© 2025 the01bros. All rights reserved.<br>
