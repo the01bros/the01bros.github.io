@@ -140,6 +140,21 @@
 <!-- ✅ FORM SECTION -->
 <section id="book" class="white center">
   <h2>📅 Book a Cleaning</h2>
+  <form
+  action="https://formspree.io/f/xnngzglz"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
   <form action="https://formspree.io/f/xnngzglz" method="POST">
     <label for="name">Full Name</label>
     <input type="text" name="name" id="name" required>
